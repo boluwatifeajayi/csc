@@ -1,0 +1,46 @@
+#calculator {
+	width: 350px;
+	height: 350px;
+	margin: 120px auto;
+	border: 1px solid rgb(227, 222, 222);
+	padding: 30px;
+  }
+
+  body{
+	background-color: lightblue;
+  }
+  
+  #display {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	text-align: right;
+	background-color: #fff;
+	border: none;
+	padding: 10px;
+  }
+  
+  #buttons {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  button {
+	width: 25%;
+	height: 50px;
+	font-size: 20px;
+	background-color: #f1f1f1;
+	border: none;
+	outline: none;
+  }
+  
+  #clear, #divide, #multiply, #subtract, #add, #modulo, #equals {
+	background-color: #0cb6f4;
+  }
+  
+  button:active {
+	background-color: #ccc;
+  }
+  

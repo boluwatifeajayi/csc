@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Basic Calculator App</title>
+</head>
+<body>
+
+	<!-- this is the section containing the title of this page -->
+	<center>
+		<h1 style="color: white; font-size: 50px;">Basic calculator</h1>
+	</center>
+	
+	<div id="calculator">
+		<input type="text" id="display" placeholder="0" disabled>
+		<div id="buttons">
+			<!-- these are the bottons and operations to the calculator using various functions that would be explained  -->
+			<!-- the appendToDisplay() function takes in the value of the number to add to the input tag above for calculations -->
+			<!-- the performOperation() function is a function in the main.js file that takes an argument of the operator to use in arithmethic -->
+			<!-- the clearDisplay() clears the calculator inputs -->
+		<button id="clear" style="background-color: rgb(234, 230, 230);" onclick="clearDisplay()">C</button>
+		  <button id="seven" onclick="appendToDisplay(7)">7</button>
+		  <button id="multiply" onclick="performOperation('*')">*</button>
+		
+		  <button id="divide" onclick="performOperation('/')">/</button>
+		 
+		  <button id="eight" onclick="appendToDisplay(8)">8</button>
+		  <button id="nine" onclick="appendToDisplay(9)">9</button>
+		  <button id="four" onclick="appendToDisplay(4)">4</button>
+		  <button id="subtract" onclick="performOperation('-')">-</button>
+		  
+		  <button id="five" onclick="appendToDisplay(5)">5</button>
+		  <button id="six" onclick="appendToDisplay(6)">6</button>
+		  <button id="one" onclick="appendToDisplay(1)">1</button>
+		  <button id="add" onclick="performOperation('+')">+</button>
+		  
+		  <button id="two" onclick="appendToDisplay(2)">2</button>
+		  <button id="three" onclick="appendToDisplay(3)">3</button>
+		  <button id="zero" onclick="appendToDisplay(0)">0</button>
+		  <button id="modulo" onclick="performOperation('%')">%</button>
+		  
+		  <button id="decimal" onclick="appendToDisplay('.')">.</button>
+		  
+		  <button id="equals" onclick="performOperation('=')">=</button>
+		  
+		</div>
+	  </div>
+<script src="main.js"></script>
+</body>
+</html>
